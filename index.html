@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset ="UTF-8">
+    <title>Craft and Puff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+       
+<!-- Build the project, create folder craft and puff, add files, connect files. 2. make a nav bar, portfolio item grid with images titles and descriptions. build about page with image and split column layout with content -->   
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="works.html">Works</a>
+                </div>
+                
+              <div class="nav-link-wrapper">
+                    <a href="blog.html">Blog</a>
+                </div> 
+                
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>PAYTON DANNEHL</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="content-wrapper">
+            <div class="craft-items-wrapper">
+                   
+                <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/casa.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Mi casa es su casa.
+                        </div>
+                    </div>
+                </div>
+        
+           <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/heart.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Mi corizon es tu.
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/dots.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            dot, dot, dot.
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/grid.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            our lives are lived in.
+                        </div>
+                    </div>
+                </div>
+            
+      
+            <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/body1.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Your beautifully made by your creator.
+                        </div>
+                    </div>
+                </div>
+          
+   
+                <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/squares.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Don't be a square.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/lion.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Hear me roar!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/tree.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Knowledge is the best growth of all.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="craft-item-wrapper">
+                    <div class="craft-img-background" style="background-image:url(images/hair.jpg)"></div> 
+                     
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/check.png">
+                        </div>
+                                 
+                        <div class="subtitle">
+                            Tempt my desires.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+                
+</body>
+<script>
+    const craftItems = document.querySelectorAll('.craft-item-wrapper')
+    
+    craftItems.forEach(craftItem => {
+        craftItem.addEventListener('mouseover', () => {
+            craftItem.childNodes[1].classList.add('img-darken');
+            
+        })
+        
+        craftItem.addEventListener('mouseout', () => {
+            craftItem.childNodes[1].classList.remove('img-darken');
+            
+        })
+    })
+
+</script>
+</html>
